@@ -142,8 +142,8 @@ nav li{
   top: -4rem;
   right: 0;
   background-image: url("/neda1.png");
-  /* background-position: center; */
-  background-position-y: 12rem;
+  background-position: center;
+  background-position-y: 8rem;
   background-size:cover;
   background-repeat: no-repeat;
   filter: grayscale();
