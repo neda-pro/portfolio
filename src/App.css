@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+:root {
+  --Black: #151515;
+  --Dark-grey: #242424;
+  --Grey: #d9d9d9;
+  --White: #FFFFFF;
+  --Green: #4EE1A0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html{
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--Black);
+}
+
+li{
+  list-style: none;
+}
+
+.heading-xl{
+  color: var(--White);
+  font-size: 8.8rem;
+  line-height: 8.8rem;
+  font-weight: 700;
+  letter-spacing: -.25rem;
+}
+
+.heading-l{
+  color: var(--White);
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  letter-spacing: -.15rem;
+}
+
+.heading-m{
+  color: var(--White);
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+
+.body-l{
+  color: var(--Grey);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.link-button{
+  background-color: transparent;
+  border: none;
+  color: var(--White);
+  height: fit-content;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: .2286rem;
+  border-bottom:.2rem solid var(--Green);
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.link-button:hover{
+  color: var(--Green);
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.container{
+  position: relative;
+  width: 137rem;
+  margin: auto;
+  padding: 4rem 9rem 16.5rem 16.5rem;
+}
+
+header{
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text{
+  color: var(--White);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.444px;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 3rem;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: var(--White);
+  }
+nav li{
+  font-size: 2rem;
+  color: var(--White);
+}
+
+.rings{
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.oval{
+  width: 53rem;
+  height: 8rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: .1rem solid #5b5b5b;
+}
+
+.oval-1{
+  margin-top: -7rem;
+}
+
+.profile{
+  width: 44.5rem;
+  height: 72rem;
+  background-color: var(--Dark-grey);
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+  right: 0;
+  background-image: url("neda1.png");
+  /* background-position: center; */
+  background-position-y: 12rem;
+  background-size:cover;
+  background-repeat: no-repeat;
+  filter: grayscale();
+}
+.circle{
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px var(--White) solid;
+  bottom: 7rem;
+  left: -6.5rem
+}
+
+.intro{
+  margin-top: 12.7rem;
+}
+
+.intro p {
+  margin-top: 4.3rem;
+  width: 44.5rem;
+  margin-bottom: 6.6rem;
+}
+
+.heading-xl u{
+  text-decoration-color: var(--Green);
+  text-underline-offset: 1.7rem;
+}
+
+
+#skills{
+  position: relative;
+  border-top: 1px solid var(--White);
+  margin-top: 22rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5.8rem;
+  padding-top: 7.2rem;
+}
+.skill-wrapper{
+  color: var(--White);
+}
+
+.skill-wrapper hr{
+  width: 70%;
+  margin: 2rem 0;
+  border-color: var(--Green);
+}
+
+.skill-wrapper ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+
+.skill-wrapper li{
+  display: flex;
+  gap: .5rem;
+}
+
+.skill-icon{
+  font-size: 3rem;
+}
+
+#projects{
+  margin-top: 14rem;
+}
+
+.projects-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#projects main{
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 7rem;
+  column-gap: 2.5rem;
+}
+
+.project-wrapper div{
+    height: 40rem;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    cursor: pointer;
+}
+
+.project-wrapper ul{
+  display: flex;
+  gap: 1.8rem;
+  margin-top: .7rem;
+}
+
+.project-wrapper h3{
+  margin-top: 2rem;
+}
+
+.project-cover{
+  visibility: hidden;
+  display: flex;
+  flex: 1;
+  background-color: rgba(0, 0, 0, .75);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.project-wrapper div:hover .project-cover{
+  visibility: visible;
+}
+
+footer{
+  position: relative;
+  height: 67.5rem;
+  background-color: var(--Dark-grey);
+  z-index: -1;
+}
+
+.contact-note{
+  max-width: 44.5rem;
+  margin-top: 3.6rem;
+}
+.footer-contact-wrapper ul{
+  margin-top: 1.6rem;
+}
+.footer-contact-wrapper li{
+  display: flex;
+  gap: 1rem;
+}
+.footer-contact-wrapper i{
+  font-size: 2.5rem;
+  color: var(--White);
+}
+
+footer hr{
+  margin-top: 9rem;
+}
+
+.footer-bottom{
+  padding-top: 4.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
