@@ -141,7 +141,7 @@ nav li{
   z-index: -1;
   top: -4rem;
   right: 0;
-  background-image: url("neda1.png");
+  background-image: url("/neda1.png");
   /* background-position: center; */
   background-position-y: 12rem;
   background-size:cover;
