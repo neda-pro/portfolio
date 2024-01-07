@@ -108,7 +108,7 @@ function App() {
                 name: "Snap",
                 image: "snap.png",
                 skills: ["React", "JS", "CSS", "React Router", "Zustand"],
-                projectLink: "https://np-snap.netlify.app/",
+                projectLink: "https://snap.neda.pro",
                 codeLink: "https://github.com/neda-pro/snap",
               }}
             />
@@ -125,7 +125,7 @@ function App() {
                   "React Query",
                   "Axios",
                 ],
-                projectLink: "https://np-chaloos.netlify.app/",
+                projectLink: "https://chaloos.neda.pro",
                 codeLink: "https://github.com/neda-pro/chaloos",
               }}
             />
@@ -134,7 +134,7 @@ function App() {
                 name: "Newsletter",
                 image: "newsletter.png",
                 skills: ["React", "JS", "CSS"],
-                projectLink: "https://np-newsletter.netlify.app/",
+                projectLink: "https://newsletter.neda.pro",
                 codeLink: "https://github.com/neda-pro/newsletter",
               }}
             />
@@ -143,7 +143,7 @@ function App() {
                 name: "Multi Step Subscription",
                 image: "multi-step.png",
                 skills: ["React", "JS", "MUI", "Redux Toolkit", "React Router"],
-                projectLink: "https://np-multistep.netlify.app/",
+                projectLink: "https://multistep.neda.pro",
                 codeLink: "https://github.com/neda-pro/multi-step-form",
               }}
             />
