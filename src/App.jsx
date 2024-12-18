@@ -73,6 +73,9 @@ function App() {
               "Material UI",
               "Redux Tool Kit",
               "Zustand",
+              "Next.js",
+              "NextUI",
+              "Tailwind CSS",
             ]}
           />
           <Skill
@@ -174,7 +177,11 @@ function App() {
                 <i>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </i>
-                <p className="body-l">neda-pro@outlook.com</p>
+                <p className="body-l">
+                  <a href="mailto:neda.azizi.pro@gmail.com">
+                    neda.azizi.pro@gmail.com
+                  </a>
+                </p>
               </li>
               <li>
                 <i>
